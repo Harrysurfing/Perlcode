@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my @array = qw (H a r r y);
+
+sub print_array {
+
+	my $ref = shift;
+	my @arr = @{$ref};
+	foreach my $element (@arr) {
+
+		print $element . "\n";
+	}
+}
+
+
+print_array \@array;
+	
